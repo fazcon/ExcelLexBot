@@ -20,7 +20,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: lex_customer_resources.lambda_handler
-      Runtime: python3.6
+      Runtime: python3.10
       MemorySize: 512
       Timeout: 300
       Tracing: Active
@@ -53,7 +53,7 @@ Resources:
       FunctionName: {{namespace}}LexDispatcher
       Description: Lex Dispatcher
       Handler: dispatcher.lambda_handler
-      Runtime: python3.6
+      Runtime: python3.10
       MemorySize: 512
       Timeout: 300
       Tracing: Active
